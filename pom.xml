@@ -15,8 +15,8 @@
 	</parent>
 
     <modules>
-		<module>apiHome-admin</module>
 		<module>apiHome-common</module>
+		<module>apiHome-admin</module>
     </modules>
 
     <properties>
