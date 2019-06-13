@@ -20,10 +20,6 @@
 		<swagger.version>2.7.0</swagger.version>
 	</properties>
 
-
-	<build>
-		<finalName>${project.artifactId}</finalName>
-	</build>
     <dependencies>
         <dependency>
             <groupId>io.renren</groupId>
@@ -103,9 +99,21 @@
 			<version>4.0.0</version>
 			<scope>test</scope>
 		</dependency>
-
-
-
-
     </dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
 </project>
