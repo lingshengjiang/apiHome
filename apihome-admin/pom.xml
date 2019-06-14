@@ -23,7 +23,7 @@
     <dependencies>
         <dependency>
             <groupId>io.renren</groupId>
-            <artifactId>apiHome-common</artifactId>
+            <artifactId>apihome-common</artifactId>
             <version>4.0.0</version>
             <scope>compile</scope>
         </dependency>
