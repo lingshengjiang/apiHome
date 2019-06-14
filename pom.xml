@@ -15,8 +15,9 @@
 	</parent>
 
     <modules>
-		<module>apiHome-common</module>
-		<module>apiHome-admin</module>
+		<module>apihome-common</module>
+		<module>apihome-dynamic-datasource</module>
+		<module>apihome-admin</module>
     </modules>
 
     <properties>

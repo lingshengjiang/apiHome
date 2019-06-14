@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.datasource.properties;
+package io.renren.commons.dynamic.datasource.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

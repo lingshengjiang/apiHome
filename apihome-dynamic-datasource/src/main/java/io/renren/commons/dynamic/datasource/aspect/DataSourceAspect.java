@@ -6,11 +6,10 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.datasource.aspect;
+package io.renren.commons.dynamic.datasource.aspect;
 
-
-import io.renren.datasource.annotation.DataSource;
-import io.renren.datasource.config.DynamicContextHolder;
+import io.renren.commons.dynamic.datasource.annotation.DataSource;
+import io.renren.commons.dynamic.datasource.config.DynamicContextHolder;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -28,6 +27,7 @@ import java.lang.reflect.Method;
  * 多数据源，切面处理类
  *
  * @author Mark sunlightcs@gmail.com
+ * @since 1.0.0
  */
 @Aspect
 @Component
@@ -35,8 +35,8 @@ import java.lang.reflect.Method;
 public class DataSourceAspect {
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Pointcut("@annotation(io.renren.datasource.annotation.DataSource) " +
-            "|| @within(io.renren.datasource.annotation.DataSource)")
+    @Pointcut("@annotation(io.renren.commons.dynamic.datasource.annotation.DataSource) " +
+            "|| @within(io.renren.commons.dynamic.datasource.annotation.DataSource)")
     public void dataSourcePointCut() {
 
     }

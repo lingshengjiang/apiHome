@@ -6,11 +6,11 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.datasource.config;
+package io.renren.commons.dynamic.datasource.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import io.renren.datasource.properties.DataSourceProperties;
-import io.renren.datasource.properties.DynamicDataSourceProperties;
+import io.renren.commons.dynamic.datasource.properties.DataSourceProperties;
+import io.renren.commons.dynamic.datasource.properties.DynamicDataSourceProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -24,6 +24,7 @@ import java.util.Map;
  * 配置多数据源
  *
  * @author Mark sunlightcs@gmail.com
+ * @since 1.0.0
  */
 @Configuration
 @EnableConfigurationProperties(DynamicDataSourceProperties.class)

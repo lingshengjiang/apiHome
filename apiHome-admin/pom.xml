@@ -5,9 +5,9 @@
 		<version>4.0.0</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>apiHome-admin</artifactId>
+	<artifactId>apihome-admin</artifactId>
 	<packaging>jar</packaging>
-	<description>apiHome-admin</description>
+	<description>apihome-admin</description>
 
 
 	<properties>

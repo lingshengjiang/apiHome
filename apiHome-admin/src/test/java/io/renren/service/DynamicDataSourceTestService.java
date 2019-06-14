@@ -8,7 +8,7 @@
 
 package io.renren.service;
 
-import io.renren.datasource.annotation.DataSource;
+import io.renren.commons.dynamic.datasource.annotation.DataSource;
 import io.renren.modules.sys.dao.SysUserDao;
 import io.renren.modules.sys.entity.SysUserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
