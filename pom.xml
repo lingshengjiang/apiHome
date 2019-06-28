@@ -18,7 +18,8 @@
 		<module>apihome-common</module>
 		<module>apihome-dynamic-datasource</module>
 		<module>apihome-admin</module>
-    </modules>
+		<module>apihome-app</module>
+	</modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
