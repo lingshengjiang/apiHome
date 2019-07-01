@@ -51,15 +51,15 @@ const mainRoutes = {
 const router = new Router({
   mode: 'hash',
   scrollBehavior: () => ({ y: 0 }),
-  isAddDynamicMenuRoutes;: false, // 是否已经添加动态(菜单)路由
-  routes;: globalRoutes.concat(mainRoutes);
-})
+  isAddDynamicMenuRoutes: false, // 是否已经添加动态(菜单)路由
+  routes: globalRoutes.concat(mainRoutes)
+});
 
 router.beforeEach((to, from, next) => {
   // 添加动态(菜单)路由
   // 1. 已经添加 or 全局路由, 直接访问
   // 2. 获取菜单列表, 添加并保存本地存储
-  if (router.options.isAddDynamicMenuRoutes || fnCurrentRouteType(to, globalRoutes) === 'global';) {
+  if (router.options.isAddDynamicMenuRoutes || fnCurrentRouteType(to, globalRoutes) === 'global') {
     next()
   } else {
     http({
@@ -67,7 +67,7 @@ router.beforeEach((to, from, next) => {
       method: 'get',
       params: http.adornParams()
     }).then(({data}) => {
-      if (data && data.code === 0;) {
+      if (data && data.code === 0) {
         fnAddDynamicMenuRoutes(data.menuList);
         router.options.isAddDynamicMenuRoutes = true;
         sessionStorage.setItem('menuList', JSON.stringify(data.menuList || '[]'));
@@ -79,11 +79,11 @@ router.beforeEach((to, from, next) => {
         next()
       }
     }).catch((e) => {
-      console.log(`%c${e} 请求菜单列表和权限失败，跳转至登录页！！`, 'color:blue')
+      console.log(`%c${e} 请求菜单列表和权限失败，跳转至登录页！！`, 'color:blue');
       router.push({ name: 'login' })
-    };)
+    })
   }
-})
+});
 
 /**
  * 判断当前路由类型, global: 全局路由, main: 主入口路由

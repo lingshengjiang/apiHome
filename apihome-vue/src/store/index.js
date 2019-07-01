@@ -16,7 +16,7 @@ export default new Vuex.Store({
     resetStore (state) {
       Object.keys(state).forEach((key) => {
         state[key] = cloneDeep(window.SITE_CONFIG['storeState'][key])
-      };)
+      })
     }
   },
   strict: process.env.NODE_ENV !== 'production'

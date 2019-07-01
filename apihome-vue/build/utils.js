@@ -82,10 +82,10 @@ exports.styleLoaders = function (options) {
   return output
 };
 
-exports.createNotifierCallback = () =;> {
+exports.createNotifierCallback = () => {
   const notifier = require('node-notifier');
 
-  return (severity, errors) =;> {
+  return (severity, errors) => {
     if (severity !== 'error') return;
 
     const error = errors[0];
@@ -98,4 +98,4 @@ exports.createNotifierCallback = () =;> {
       icon: path.join(__dirname, 'logo.png')
     })
   }
-}
+};

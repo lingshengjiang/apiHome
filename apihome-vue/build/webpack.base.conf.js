@@ -8,7 +8,7 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
-const createLintingRule = () =;> ({
+const createLintingRule = () => ({
   test: /\.(js|vue)$/,
   loader: 'eslint-loader',
   enforce: 'pre',
@@ -40,65 +40,65 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),;
+      ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
-        /\.vue$/,
-        loader;: 'vue-loader',
-        options;: vueLoaderConfig
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: vueLoaderConfig
       },
       {
-        /\.js$/,
-        loader;: 'babel-loader',
-        include;: [resolve('src'), resolve('test')]
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('test')]
       },
       {
-        /\.svg$/,
-        loader;: 'svg-sprite-loader',
-        include;: [resolve('src/icons')]
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader',
+        include: [resolve('src/icons')]
       },
       {
-        /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader;: 'url-loader',
-        exclude;: [resolve('src/icons')],
-        options;: {
-          10000,
-          name;: utils.assetsPath('img/[name].[hash:7].[ext]')
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        exclude: [resolve('src/icons')],
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
       {
-        /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
-        loader;: 'url-loader',
-        options;: {
-          10000,
-          name;: utils.assetsPath('media/[name].[hash:7].[ext]')
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('media/[name].[hash:7].[ext]')
         }
       },
       {
-        /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader;: 'url-loader',
-        options;: {
-          10000,
-          name;: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       }
     ]
   },
-  {
+  node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
-    false,
+    setImmediate: false,
     // prevent webpack from injecting mocks to Node native modules
     // that does not make sense for the client
-    dgram;: 'empty',
-    fs;: 'empty',
-    net;: 'empty',
-    tls;: 'empty',
-    child_process;: 'empty'
+    dgram: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+    child_process: 'empty'
   },
   // 引入外部库, 无需webpack打包处理
-  {
-    'Mock',
-    echarts;: 'echarts',
-    ueditor;: 'UE'
+  externals: {
+    mockjs: 'Mock',
+    echarts: 'echarts',
+    ueditor: 'UE'
   }
-}
+};
