@@ -7,7 +7,7 @@ import io.renren.common.utils.PageUtils;
 import java.util.Map;
 
 /**
- * 接口项目entity
+ * 接口项目service
  *
  * Created by zyanycall@gmail.com on 2019-07-02 15:05.
  */

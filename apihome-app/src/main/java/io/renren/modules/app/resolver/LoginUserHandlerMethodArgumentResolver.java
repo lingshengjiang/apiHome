@@ -6,12 +6,12 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.resolver;
+package io.renren.modules.app.resolver;
 
-import io.renren.app.annotation.LoginUser;
-import io.renren.app.entity.UserEntity;
-import io.renren.app.service.UserService;
-import io.renren.app.interceptor.AuthorizationInterceptor;
+import io.renren.modules.app.annotation.LoginUser;
+import io.renren.modules.app.entity.UserEntity;
+import io.renren.modules.app.service.UserService;
+import io.renren.modules.app.interceptor.AuthorizationInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.stereotype.Component;

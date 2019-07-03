@@ -6,12 +6,12 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.service;
+package io.renren.modules.app.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import io.renren.app.entity.UserEntity;
-import io.renren.app.form.LoginForm;
+import io.renren.modules.app.entity.UserEntity;
+import io.renren.modules.app.form.LoginForm;
 
 /**
  * 用户

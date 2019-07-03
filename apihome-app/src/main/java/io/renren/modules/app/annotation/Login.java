@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.annotation;
+package io.renren.modules.app.annotation;
 
 import java.lang.annotation.*;
 

@@ -21,7 +21,6 @@ import java.util.Map;
 @Service("ApiTestProjectService")
 public class ApiTestProjectServiceImpl extends ServiceImpl<ApiTestProjectDao, ApiTestProjectEntity> implements ApiTestProjectService {
 
-
     @Override
     public PageUtils queryPage(Map<String, Object> params) {
         String paramKey = (String) params.get("projectName");

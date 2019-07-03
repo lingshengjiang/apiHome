@@ -6,17 +6,17 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.service.impl;
+package io.renren.modules.app.service.impl;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import io.renren.app.entity.UserEntity;
-import io.renren.app.service.UserService;
+import io.renren.modules.app.entity.UserEntity;
+import io.renren.modules.app.service.UserService;
 import io.renren.common.exception.RRException;
 import io.renren.common.validator.Assert;
-import io.renren.app.dao.UserDao;
-import io.renren.app.form.LoginForm;
+import io.renren.modules.app.dao.UserDao;
+import io.renren.modules.app.form.LoginForm;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.stereotype.Service;
 

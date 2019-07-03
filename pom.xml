@@ -17,9 +17,9 @@
     <modules>
 		<module>apihome-common</module>
 		<module>apihome-dynamic-datasource</module>
-		<module>apihome-admin</module>
+		<module>apihome-api-test</module>
 		<module>apihome-app</module>
-        <module>apihome-api-test</module>
+		<module>apihome-admin</module>
     </modules>
 
     <properties>

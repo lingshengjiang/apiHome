@@ -6,10 +6,10 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.dao;
+package io.renren.modules.app.dao;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import io.renren.app.entity.UserEntity;
+import io.renren.modules.app.entity.UserEntity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

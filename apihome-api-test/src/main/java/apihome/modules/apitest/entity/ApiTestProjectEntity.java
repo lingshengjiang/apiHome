@@ -55,23 +55,23 @@ public class ApiTestProjectEntity {
     /**
      * 提交用例的人
      */
-    private String create_by;
+    private String createBy;
 
     /**
      * 修改用例的人
      */
-    private String modify_by;
+    private String modifyBy;
 
     /**
      * 提交的时间
      */
-    private Date gmt_create;
+    private Date gmtCreate;
 
     /**
      * 更新的时间
      */
 //    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
-    private Date gmt_modify;
+    private Date gmtModify;
 
 
     public String getProjectName() {
@@ -122,35 +122,43 @@ public class ApiTestProjectEntity {
         this.remark = remark;
     }
 
-    public String getCreate_by() {
-        return create_by;
+    public Long getProjectId() {
+        return projectId;
     }
 
-    public void setCreate_by(String create_by) {
-        this.create_by = create_by;
+    public void setProjectId(Long projectId) {
+        this.projectId = projectId;
     }
 
-    public String getModify_by() {
-        return modify_by;
+    public String getCreateBy() {
+        return createBy;
     }
 
-    public void setModify_by(String modify_by) {
-        this.modify_by = modify_by;
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy;
     }
 
-    public Date getGmt_create() {
-        return gmt_create;
+    public String getModifyBy() {
+        return modifyBy;
     }
 
-    public void setGmt_create(Date gmt_create) {
-        this.gmt_create = gmt_create;
+    public void setModifyBy(String modifyBy) {
+        this.modifyBy = modifyBy;
     }
 
-    public Date getGmt_modify() {
-        return gmt_modify;
+    public Date getGmtCreate() {
+        return gmtCreate;
     }
 
-    public void setGmt_modify(Date gmt_modify) {
-        this.gmt_modify = gmt_modify;
+    public void setGmtCreate(Date gmtCreate) {
+        this.gmtCreate = gmtCreate;
+    }
+
+    public Date getGmtModify() {
+        return gmtModify;
+    }
+
+    public void setGmtModify(Date gmtModify) {
+        this.gmtModify = gmtModify;
     }
 }

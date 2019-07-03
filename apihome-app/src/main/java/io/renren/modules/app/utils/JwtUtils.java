@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.utils;
+package io.renren.modules.app.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

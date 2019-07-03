@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.form;
+package io.renren.modules.app.form;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

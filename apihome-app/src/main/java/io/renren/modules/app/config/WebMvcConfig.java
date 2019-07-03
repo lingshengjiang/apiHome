@@ -6,10 +6,10 @@
  * 版权所有，侵权必究！
  */
 
-package io.renren.app.config;
+package io.renren.modules.app.config;
 
-import io.renren.app.interceptor.AuthorizationInterceptor;
-import io.renren.app.resolver.LoginUserHandlerMethodArgumentResolver;
+import io.renren.modules.app.interceptor.AuthorizationInterceptor;
+import io.renren.modules.app.resolver.LoginUserHandlerMethodArgumentResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
